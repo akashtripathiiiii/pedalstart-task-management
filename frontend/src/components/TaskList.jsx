@@ -3,24 +3,7 @@ import axios from 'axios';
 import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
-const BackButton = styled(Link)`
-  position: absolute;
-  top: 20px;
-  left: 20px;
-  text-decoration: none;
-  color: #007bff;
-  font-size: 1.2rem;
-  display: flex;
-  align-items: center;
 
-  &:hover {
-    color: #0056b3;
-  }
-`;
-
-const BackIcon = styled.span`
-  margin-right: 5px;
-`;
 
 const TaskContainer = styled.div`
   max-width: 800px;
