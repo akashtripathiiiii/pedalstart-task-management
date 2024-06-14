@@ -58,15 +58,19 @@ function TaskDetail() {
         navigate(`/edit-task/${id}`);
     };
 
-    const handleDelete = async () => {
-        try {
-            await axios.delete(`/tasks/${id}`);
-            navigate('/');
-        } catch (error) {
-            console.error('Error deleting task:', error);
-            alert('Error deleting task. Please try again later.');
-        }
-    };
+  const handleDelete = async () => {
+    try {
+      console.log(`Sending delete request for task ID: ${id}`);
+      await axios.delete(`/tasks/${id}`);
+      console.log('Task deleted successfully');
+      navigate('/');
+    } catch (error) {
+      console.error('Error deleting task:', error);
+      console.error('Error details:', error.response ? error.response.data : error.message);
+      alert('Error deleting task. Please try again later.');
+    }
+  };
+
 
     if (!task) return <p>Loading...</p>;
 

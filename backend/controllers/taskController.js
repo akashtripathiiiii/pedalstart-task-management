@@ -51,15 +51,19 @@ exports.updateTask = (req, res) => {
 };
 
 exports.deleteTask = (req, res) => {
-    Task.findByIdAndRemove(req.params.id)
+    console.log('Delete request received for task ID:', req.params.id);
+    Task.findByIdAndDelete(req.params.id)
         .then(task => {
             if (!task) {
+                console.log('Task not found for ID:', req.params.id);
                 return res.status(404).json({ error: 'Task not found' });
             }
+            console.log('Task deleted successfully:', task);
             res.json({ message: 'Task deleted successfully' });
         })
         .catch(error => {
-            console.error('Error deleting task:', error);
-            res.status(500).json({ error: 'Internal Server Error' });
+            console.error('Error deleting task:', error.message); // Log error message
+            console.error('Stack trace:', error.stack); // Log stack trace
+            res.status(500).json({ error: 'Internal Server Error', details: error.message });
         });
 };
