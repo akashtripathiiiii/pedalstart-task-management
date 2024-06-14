@@ -129,9 +129,7 @@ const TaskList = () => {
 
     return (
         <>
-            <BackButton to="/">
-                <BackIcon>&#8592;</BackIcon> Back
-            </BackButton>
+           
             <TaskContainer>
                 <ButtonContainer>
                     <AddTaskButton to="/add-task">Add Task</AddTaskButton>
