@@ -44,10 +44,10 @@ Before you begin, ensure you have the following installed on your machine:
 ## Installation
 
 ### Clone the Repository
-
+ ```bash
 git clone https://github.com/akashtripathiiiii/pedalstart-task-management.git
 cd pedalstart-task-management
-
+```
 
 ### Backend Setup
 
