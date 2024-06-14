@@ -1,7 +1,25 @@
-```markdown
 # Pedalstart Task Management
 
 Pedalstart Task Management is a simple application that allows users to manage their tasks. Users can create, update, delete, and mark tasks as completed.
+
+## Images
+### 1. Task List
+   
+![Screenshot 2024-06-14 210512](https://github.com/akashtripathiiiii/pedalstart-task-management/assets/57222581/be65f60c-f1be-4dd1-a693-8377b35b4763)
+
+### 2. Add Task
+   
+![Screenshot 2024-06-14 210532](https://github.com/akashtripathiiiii/pedalstart-task-management/assets/57222581/49da935d-8b84-4424-979d-1dc989b2ccae)
+
+### 3. Show Incomplete Task
+   
+![Screenshot 2024-06-14 210549](https://github.com/akashtripathiiiii/pedalstart-task-management/assets/57222581/466fa74e-1ed6-40d2-a422-2a2933a632f3)
+
+### 4. Task Detail
+
+![Screenshot 2024-06-14 210549](https://github.com/akashtripathiiiii/pedalstart-task-management/assets/57222581/da77fe2f-d816-4f3a-a2bb-6979a64f9e6e)
+
+
 
 ## Features
 
@@ -27,14 +45,13 @@ Before you begin, ensure you have the following installed on your machine:
 
 ### Clone the Repository
 
-```bash
-git clone https://github.com/your-username/pedalstart-task-management.git
+git clone https://github.com/akashtripathiiiii/pedalstart-task-management.git
 cd pedalstart-task-management
-```
+
 
 ### Backend Setup
 
-1. Navigate to the `server` directory:
+1. Navigate to the `backend` directory:
 
     ```bash
     cd server
@@ -46,7 +63,7 @@ cd pedalstart-task-management
     npm install
     ```
 
-3. Create a `.env` file in the `server` directory and add your MongoDB URI and other environment variables:
+3. Create a `.env` file in the `backend` directory and add your MongoDB URI and other environment variables:
 
     ```env
     MONGO_URI=your_mongodb_uri
@@ -83,32 +100,6 @@ cd pedalstart-task-management
 
     The frontend development server should now be running on `http://localhost:3000`.
 
-## Directory Structure
-
-```plaintext
-.
-├── server/
-│   ├── controllers/
-│   │   └── taskController.js
-│   ├── models/
-│   │   └── Task.js
-│   ├── routes/
-│   │   └── tasks.js
-│   ├── .env
-│   ├── package.json
-│   └── server.js
-├── src/
-│   ├── components/
-│   │   ├── TaskDetail.js
-│   │   ├── TaskForm.js
-│   │   └── TaskList.js
-│   ├── App.js
-│   ├── index.js
-│   └── styles.js
-├── .gitignore
-├── package.json
-└── README.md
-```
 
 ## API Endpoints
 
@@ -120,16 +111,7 @@ cd pedalstart-task-management
 - **PUT /tasks/:id**: Update a task by ID
 - **DELETE /tasks/:id**: Delete a task by ID
 
-## Contributing
-
-1. Fork the repository.
-2. Create a new branch (`git checkout -b feature/your-feature`).
-3. Make your changes.
-4. Commit your changes (`git commit -am 'Add some feature'`).
-5. Push to the branch (`git push origin feature/your-feature`).
-6. Create a new Pull Request.
 
 ## License
 
 This project is licensed under the MIT License.
-```
