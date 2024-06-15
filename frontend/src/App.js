@@ -28,8 +28,8 @@ const Main = styled.main`
   flex: 1;
   padding: 20px;
   background-color: #f8f9fa;
-  margin-top: 80px; /* Adjust based on header height */
-  margin-bottom: 60px; /* Adjust based on footer height */
+  margin-top: 80px;
+  margin-bottom: 60px;
   overflow-y: auto;
 `;
 
@@ -58,7 +58,7 @@ function App() {
         </Header>
         <Main>
           <Routes>
-            <Route path="/" element={<TaskList />} />
+            <Route path="/" exact element={<TaskList />} />
             <Route path="/tasks/:id" element={<TaskDetail />} />
             <Route path="/add-task" element={<TaskForm />} />
             <Route path="/edit-task/:id" element={<TaskForm />} />

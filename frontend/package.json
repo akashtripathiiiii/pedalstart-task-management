@@ -2,7 +2,7 @@
   "name": "frontend",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://akashtripathiiiii.github.io/pedalstart-task-management",
+  "homepage": "https://akashtripathiiiii.github.io/pedalstart-task-management/",
   "proxy": "http://localhost:5000",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
