@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/pedalstart-task-management/static/css/main.e6c13ad2.css",
-    "main.js": "/pedalstart-task-management/static/js/main.d4d9d5f7.js",
-    "static/js/453.8ab44547.chunk.js": "/pedalstart-task-management/static/js/453.8ab44547.chunk.js",
-    "index.html": "/pedalstart-task-management/index.html",
-    "main.e6c13ad2.css.map": "/pedalstart-task-management/static/css/main.e6c13ad2.css.map",
-    "main.d4d9d5f7.js.map": "/pedalstart-task-management/static/js/main.d4d9d5f7.js.map",
-    "453.8ab44547.chunk.js.map": "/pedalstart-task-management/static/js/453.8ab44547.chunk.js.map"
+    "main.css": "/static/css/main.e6c13ad2.css",
+    "main.js": "/static/js/main.e547bea8.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "index.html": "/index.html",
+    "main.e6c13ad2.css.map": "/static/css/main.e6c13ad2.css.map",
+    "main.e547bea8.js.map": "/static/js/main.e547bea8.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.e6c13ad2.css",
-    "static/js/main.d4d9d5f7.js"
+    "static/js/main.e547bea8.js"
   ]
 }
